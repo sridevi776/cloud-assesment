@@ -1,0 +1,169 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #5d3a1a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d2691e;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #a0522d;
+      margin-bottom: 10px;
+    }
+    .welcome-section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .welcome-text {
+      flex: 1;
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    .welcome-image {
+      flex: 1;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .menu-item {
+      background: white;
+      border: 2px solid #d2691e;
+      border-radius: 10px;
+      padding: 20px;
+      width: calc(50% - 25px);
+      box-shadow: 0 3px 8px rgba(210,105,30,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .menu-item h3 {
+      margin-top: 0;
+      color: #8b4513;
+    }
+    .menu-item p {
+      margin-bottom: 12px;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #a0522d;
+      margin-bottom: 15px;
+    }
+    .order-button {
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 15px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-self: flex-start;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .order-button:hover {
+      background-color: #a0522d;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #d2691e;
+      color: white;
+      margin-top: 50px;
+      font-size: 0.9em;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 600px) {
+      .menu-item {
+        width: 100%;
+      }
+      .welcome-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Coffee Shop
+  </header>
+  <main>
+    <section class="welcome-section">
+      <div class="welcome-text">
+        <h2>Welcome to Our Coffee Shop</h2>
+        <p>Enjoy the best coffee in town, freshly brewed just for you! Relax in a cozy environment with a delicious cup of your favorite coffee.</p>
+      </div>
+      <img
+        class="welcome-image"
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+        alt="Cup of coffee"
+      />
+    </section>
+
+    <section>
+      <h2>Our Menu</h2>
+      <div class="menu">
+        <div class="menu-item">
+          <h3>Espresso</h3>
+          <p>Rich and bold espresso shot.</p>
+          <div class="price">$2.50</div>
+          <img src="./espresso.jpg">
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <h3>Cappuccino</h3>
+          <p>Espresso with steamed milk and foam.</p>
+          <div class="price">$3.50</div>
+          <img src="./cappuccino.jpg">
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <h3>Latte</h3>
+          <p>Smooth espresso with steamed milk.</p>
+          <div class="price">$3.75</div>
+          <img src="./latte.jpg">
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <h3>Mocha</h3>
+          <p>Chocolate-flavored latte with whipped cream.</p>
+          <div class="price">$4.00 </div>
+          <img src="./mocha.jpg">
+          <button class="order-button">Order Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Coffee Shop. All rights reserved.
+  </footer>
+</body>
+</html>
